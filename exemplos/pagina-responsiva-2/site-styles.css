@@ -1,0 +1,64 @@
+h1, h2, h3, h4, h5, h6 {
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.site {
+  border: 1px solid #bdc3c7;
+  border-radius: 8px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
+
+/* For desktop: */
+.col-1 { width: calc((100% / 12) * 1); }
+.col-2 { width: calc((100% / 12) * 2); }
+.col-3 { width: calc((100% / 12) * 3); }
+.col-4 { width: calc((100% / 12) * 4); }
+.col-5 { width: calc((100% / 12) * 5); }
+.col-6 { width: calc((100% / 12) * 6); }
+.col-7 { width: calc((100% / 12) * 7); }
+.col-8 { width: calc((100% / 12) * 8); }
+.col-9 { width: calc((100% / 12) * 9); }
+.col-10 { width: calc((100% / 12) * 10); }
+.col-11 { width: calc((100% / 12) * 11); }
+.col-12 { width: 100%; }
+
+/* For mobile phones */
+@media only screen and (max-width: 768px) {
+  [class*="col-"] {
+    width: 100%;
+  }
+}
+
+.left-menu > ul {
+  list-style-type: none;
+}
+
+.left-menu > ul > li {
+  background-color: #3498db;
+  margin: 4px 0;
+  padding: 4px 8px;
+  color: #fff;
+}
+
+.content {
+  white-space: break-spaces;
+}
+
+.right-menu {
+  white-space: break-spaces;
+  background-color: #1abc9c;
+}

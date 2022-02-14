@@ -1,0 +1,88 @@
+h1, h2, h3, h4, h5, h6 {
+  text-align: center;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px #ecf0f1 solid;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.card .card-image {
+  flex-shrink: 0;
+  overflow: hidden;
+}
+
+.card .card-image img {
+  width: 200px;
+  height: 200px;
+  display: block;
+}
+
+.card .card-content {
+  display: flex;
+  flex-direction: column;
+  margin: 0 16px;
+}
+
+.card .card-content .card-content-title {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.card .card-content .card-content-subtitle {
+  font-weight: 600;
+}
+
+.card .card-content ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.card-contents {
+  display: grid;
+  gap: 8px;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+      "description"
+      "skills"
+      "social-media";
+}
+
+.card-contents .description {
+  grid-area: description;
+}
+.card-contents .skills {
+  grid-area: skills;
+}
+.card-contents .social-media {
+  grid-area: social-media;
+}
+
+/* SM  */
+@media (min-width: 576px) {
+  .card-contents {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "description description"
+      "skills social-media";
+  }
+}
+
+/* MD */
+@media (min-width: 768px) {
+  .card {
+    flex-direction: row;
+  }
+}
+
+/* LG */
+@media (min-width: 992px) {
+  .card-contents {
+    grid-template-columns: 1fr 185px 185px;
+    grid-template-areas:
+      "description skills social-media";
+  }
+}
