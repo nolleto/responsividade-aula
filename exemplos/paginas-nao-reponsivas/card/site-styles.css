@@ -1,0 +1,58 @@
+h1, h2, h3, h4, h5, h6 {
+  text-align: center;
+}
+
+.card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border: 1px #ecf0f1 solid;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.card .card-image {
+  flex-shrink: 0;
+  overflow: hidden;
+}
+
+.card .card-image img {
+  width: 200px;
+  height: 200px;
+  display: block;
+}
+
+.card .card-content {
+  display: flex;
+  flex-direction: column;
+  margin: 0 16px;
+}
+
+.card .card-content .card-content-title {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.card .card-content .card-content-subtitle {
+  font-weight: 600;
+}
+
+.card .card-content ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.card-contents > * {
+  display: inline-block;
+}
+
+.card-contents .description {
+  width: 700px;
+}
+
+.card-contents .skills {
+  width: 200px;
+}
+
+.card-contents .social-media {
+  width: 200px;
+}

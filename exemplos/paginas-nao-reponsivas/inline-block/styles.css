@@ -1,0 +1,15 @@
+h1, h2, h3, h4, h5, h6 {
+  text-align: center;
+}
+
+.cards-container {
+  width: 100%;
+  text-align: center;
+}
+
+.card {
+  display: inline-block;
+  margin: 4px;
+  border-radius: 16px;
+  overflow: hidden;
+}
