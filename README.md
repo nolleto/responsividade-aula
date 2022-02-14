@@ -33,16 +33,18 @@ Com isso, um site responsivo seria um site aonde o conteúdo irá se adaptar de 
 
 Um exemplo, imagina q você esteja construindo um site que vai mostrar suas fotos como se tivesse em uma tabela:
 
-|----------------------------------------------------------------|
-|                                                                |
-|   |----------------|  |----------------|  |----------------|   |
-|   |                |  |                |  |                |   |
-|   |    Foto 1      |  |      Foto 2    |  |     Foto 3     |   |
-|   |                |  |                |  |                |   |
-|   |                |  |                |  |                |   |
-|   |----------------|  |----------------|  |----------------|   |
-|                                                                |
-|----------------------------------------------------------------|
+```
+|----------------------------------------------------|
+|                                                    |
+|   |------------|  |------------|  |------------|   |
+|   |            |  |            |  |            |   |
+|   |  Foto 1    |  |   Foto 2   |  |   Foto 3   |   |
+|   |            |  |            |  |            |   |
+|   |            |  |            |  |            |   |
+|   |------------|  |------------|  |------------|   |
+|                                                    |
+|----------------------------------------------------|
+```
 
 Você poderia escolher quantas colunas você mostraria de acordo com o tamanho da tela.
 - Em desktop -> 3 fotos por linha
